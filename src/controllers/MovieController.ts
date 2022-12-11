@@ -14,7 +14,7 @@ class MovieController {
         const movieDetails = await movieService.details(req.params.movieId);
 
         return res.json({
-            message: movieDetails
+            movieDetails
         });
     }
 }
